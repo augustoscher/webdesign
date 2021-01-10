@@ -1,0 +1,105 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title> pagina de exemplo estrutura basica </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Augusto">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+    
+    <style>
+      body {
+        margin: 0;
+        background-color: #ccc;
+      }
+
+      header{
+        font-family: sans-serif;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: right bottom;
+        background-image: url(imagens/bg.jpg);
+        height: 300px;
+      }
+
+      ul{
+        margin: 0;
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      main {
+        margin: auto;
+        width: 90%;
+        margin-top: 20px;
+      }
+
+      h1{
+        background-color: #ccc;
+        margin: 0;
+        text-indent: 25px;
+      }
+
+      .content-section{
+        background-color: #fff;
+        margin-bottom: 20px;
+        display: flex;
+        
+      }
+
+      .title-section{
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+
+
+      .box-section {
+        height: 100px;
+        background-color: aqua;
+        margin: 10px;
+        width: 100%;
+      }
+
+      .img-html{
+        float: left;
+      }
+
+      .img-css{
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><button>Inicio</button></li>
+        <li><button>Quem sou eu</button></li>
+        <li><button>Contato</button></li>
+      </ul>
+    </header>
+    <main>
+      <div class="content-section">
+        <section class="box-section">
+          Seletores
+        </section>
+        <section class="box-section">
+          Posicionamentos
+        </section>
+        <section class="box-section">
+          Fontes e Icones
+        </section>
+      </div>
+
+      <div class="title-section">
+        <h1>Titulo</h1>
+        <ul>
+          <li><p>Teste de css e html</p></li>
+          <li><p>Certificação em estrutura de paginas web</p></li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
