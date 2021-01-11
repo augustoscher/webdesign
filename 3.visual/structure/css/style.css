@@ -9,6 +9,8 @@ body{
   height: 500px;
   background-position: right center;
   background-size: cover;
+  /* Apenas para a ul basear-se no hero para definir a margin */
+  border-top: 1px solid transparent;  
 }
 
 .hero-content{
@@ -23,6 +25,36 @@ body{
   /* 1: deslocamento vertical, 2: deslocamento horizontal, 
   3: blur, 4: cor */
   text-shadow: 3px 3px 3px #333
+}
+
+.hero nav ul {
+  /* funciona pois as li's estão com estilo inline-block 
+  É como se elas fossem um único texto */
+  text-align: right;
+  margin: 25px 25px 0 0;
+}
+
+.hero nav li{
+  display: inline-block;
+  border: 1px solid white;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.hero nav a{
+  /* rgba color with transparency */
+  background: rgba(0,0,0, 0.15);
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.hero nav a:hover{
+  background: rgba(0,0,0, 0.55);
 }
 
 main{
