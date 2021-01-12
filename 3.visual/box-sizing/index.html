@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title> pagina de exemplo estrutura basica </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Augusto">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+    
+    <style>
+      body {
+        background-color: #ccc;
+      }
+
+      div {
+        border: 1px solid blue;
+        background-color: white;
+        height: 150px;
+        width: 150px;
+        margin: 10px;
+      }
+
+      #div1 {
+        /* Nesse cenário a div terá 200px de w e h */
+        padding: 25px;
+      }
+
+      #div2 {
+        /* Nesse caso, o padding não é somado no tamanho da div.
+        O tamanho do conteudo é diminuido */
+        padding: 25px;
+        box-sizing: border-box;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Box Sizing</h1>
+    <div id="div1">
+      <b>Content Box</b>
+    </div>
+    <div id="div2">
+      <b>Border Box</b>
+    </div>
+  </body>
+</html>
