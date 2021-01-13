@@ -1,0 +1,101 @@
+body{
+  font-family: tahoma, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#principal {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.header-top {
+  height: 50px;
+  background-color: #162028;
+  position: relative;
+}
+
+.logo {
+  margin: 5px 0 0 135px;
+}
+
+.header-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.header-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 15px;
+}
+
+.header-nav a {
+  color:#425564;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.header-nav a:hover {
+  color:white;
+}
+
+.hero-img{
+  width: 100%;
+}
+
+.portifolio {
+  padding: 25px 80px;
+  text-align: center;
+}
+
+.portifolio p {
+  line-height: 2;
+  font-size: 14px;
+  color: rgb(101, 99, 99);
+}
+
+.gallery {
+  padding: 25px 130px;
+  overflow: auto;
+  text-align: center;
+}
+
+.gallery-card {
+  width: 33%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.gallery-card img {
+  width: 100%;
+}
+
+.about {
+  padding: 50px 80px;
+  height: 400px;
+  color: white;
+  background-image: url("../imagens/bg_detalhe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  box-sizing: border-box;
+}
+
+.about p {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
+  width: 65%;
+}
