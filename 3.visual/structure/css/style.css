@@ -27,6 +27,13 @@ body{
   text-shadow: 3px 3px 3px #333
 }
 
+.hero-content p {
+  background-color: rgba(0,0,0,0.4);
+  display: inline-block;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
 .hero nav ul {
   /* funciona pois as li's estão com estilo inline-block 
   É como se elas fossem um único texto */
@@ -64,8 +71,38 @@ main{
 
 .content-section{
   background-color: white;
-  padding: 15px;
+  padding: 10px;
   margin-top: 15px;
+  overflow: auto;
+}
+
+.card {
+  width: 32%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.card-1 {
+  margin-right: 2%;
+}
+
+.card-2 {
+  margin-right: 2%;
+}
+
+/* imagem ficar dentro do container card */
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card p {
+  background-color: rgba(0,0,0,0.8);
+  margin: 0;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .content-header{
