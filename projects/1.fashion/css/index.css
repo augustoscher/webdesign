@@ -44,6 +44,12 @@ body{
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 12px;
+  /* transition tem 3 props:display: 
+    1- propriedade que será animada
+    2- tempo de duração
+    3- função de aceleração/desaceleração
+   */
+  transition: color 0.5s linear;
 }
 
 .header-nav a:hover {
@@ -62,7 +68,7 @@ body{
 .portifolio p {
   line-height: 2;
   font-size: 14px;
-  color: rgb(101, 99, 99);
+  color: #555;
 }
 
 .gallery {
@@ -99,8 +105,9 @@ body{
 
 .about {
   padding: 50px 80px;
-  height: 400px;
+  height: 500px;
   color: white;
+  background-color: #003d52;
   background-image: url("../imagens/bg_detalhe.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -111,17 +118,42 @@ body{
 .about h2 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  font-size: 40px;
+  font-weight: normal;
 }
 
 .about p {
   text-align: left;
   font-size: 14px;
   line-height: 1.5;
-  width: 65%;
+  width: 70%;
 
+}
+
+#contact {
+  margin: 50px 0;
+}
+
+#contact address {
+  color: #143f52;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-style: normal;
+  text-align: center;
+  font-weight: bold;
 }
 
 .maps {
   width: 100%;
-  height: 400px;
+  height: 450px;
+}
+
+.rodape{
+  background: #0b171f;
+  padding: 25px;
+  font-size: 12px;
+  color: #6f8597;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 25px;
 }
