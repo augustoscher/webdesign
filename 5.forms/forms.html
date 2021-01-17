@@ -16,9 +16,21 @@
       action="http://google.com/search"
       method="GET"
       target="_blank">
-      <input type="text" name="q"/>
+      <label for="txtbusca">Search</label>
+      <input type="text" name="q" id="txtbusca" />
       <input type="submit" value="ok" />
     </form>
 
+    <br />
+    <form action="login.php" method="POST">
+      <fieldset>
+        <legend>Loogin</legend>
+        <label for="txtlogin">Login</label>
+        <input type="text" name="login" id="txtlogin" />
+        <label for="txtpassword">Password</label>
+        <input type="password" name="password" id="txtpassword" />
+      </fieldset>
+      <input type="submit" value="login" />
+    </form>
   </body>
 </html>
