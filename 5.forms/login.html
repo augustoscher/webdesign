@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title> Login </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Augusto">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <style>
+      .formLogin{
+        width: 300px;
+        margin: 50px auto;
+        font-family: sans-serif;
+      }
+
+      .formLogin label {
+        margin: 25px 0 6px 0;
+        display: block;
+      }
+
+      fieldset{
+        background-color: #ccc;
+      }
+
+      #txtpassword, #txtlogin, .submitLogin {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        padding: 15px;
+        font-size: 14px;
+        border: none;
+      }
+
+      #txtpassword, #txtlogin {
+        background:#ddd;
+      }
+
+      #txtpassword:focus, #txtlogin:focus {
+        background: white;
+      }
+
+      .submitLogin:hover{
+        background-color: blue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="#" method="POST" target="_blank" class="formLogin">
+      <fieldset>
+        <legend>Login</legend>
+        <label for="txtlogin">Digite o usuário</label>
+        <input type="text" name="login" id="txtlogin" autofocus />
+        <label for="txtpassword">Digite a senha</label>
+        <input type="password" name="password" id="txtpassword" />
+        <input type="submit" value="login" class="submitLogin"/>
+      </fieldset>
+    </form>
+  </body>
+</html>
