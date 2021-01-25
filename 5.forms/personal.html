@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title> Login Form </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Augusto">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <style>
+      form{
+        width: 400px;
+        margin: 50px auto;
+        font-family: sans-serif;
+      }
+
+      form label {
+        margin: 10px 0 6px 0;
+        display: block;
+      }
+
+      form input {
+        display: block;
+      }
+
+      .submit{
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="POST" target="_blank">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="txtemail">Email</label>
+        <input type="email" name="email" id="txtemail" autofocus />
+
+        <label for="txtfilhos">Filhos</label>
+        <input type="number" name="filhos" id="txtfilhos" min="0" max="20" />
+
+        <label for="txtdate">Nascimento</label>
+        <input type="date" name="nascimento" id="txtdate" min="1969-01-30" />
+
+        <p>Sexo</p>
+        <label for="radiomasc">Masculino</label>
+        <input type="radio" name="sexo" id="radiomasc" value="M" />
+
+        <label for="radiofem">Feminino</label>
+        <input type="radio" name="sexo" id="radiofem" value="F" />
+
+        <input type="submit" value="Enviar" class="submit"/>
+      </fieldset>
+    </form>
+  </body>
+</html>
