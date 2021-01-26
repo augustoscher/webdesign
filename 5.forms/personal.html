@@ -10,7 +10,7 @@
 
     <style>
       form{
-        width: 400px;
+        width: 300px;
         margin: 50px auto;
         font-family: sans-serif;
       }
@@ -20,8 +20,9 @@
         display: block;
       }
 
-      form input {
+      .input{
         display: block;
+        width: 100%;
       }
 
       .submit{
@@ -34,13 +35,13 @@
       <fieldset>
         <legend>Dados pessoais</legend>
         <label for="txtemail">Email</label>
-        <input type="email" name="email" id="txtemail" autofocus />
+        <input class="input" type="email" name="email" id="txtemail" autofocus required />
 
         <label for="txtfilhos">Filhos</label>
-        <input type="number" name="filhos" id="txtfilhos" min="0" max="20" />
+        <input class="input" type="number" name="filhos" id="txtfilhos" min="0" max="20" />
 
         <label for="txtdate">Nascimento</label>
-        <input type="date" name="nascimento" id="txtdate" min="1969-01-30" />
+        <input class="input" type="date" name="nascimento" id="txtdate" min="1969-01-30" />
 
         <p>Sexo</p>
         <label for="radiomasc">Masculino</label>
@@ -49,8 +50,44 @@
         <label for="radiofem">Feminino</label>
         <input type="radio" name="sexo" id="radiofem" value="F" />
 
-        <input type="submit" value="Enviar" class="submit"/>
+        <label for="selectestado">Estado</label>
+        <select class="input" id="selectestado" name="estado">
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="SC">Santa Catarina</option>
+        </select>
+
+        <label for="range">Nota</label>
+        <input id="range" type="range" min="0" max="10" step="2">
+
+        <label for="color">Cor</label>
+        <input id="color" type="color">
       </fieldset>
+
+      <fieldset>
+        <legend>Area de Interesse</legend>
+
+        <label for="chkhtml">HTML</label>
+        <input id="chkhtml" type="checkbox" name="html" value="html">
+
+        <label for="chkcss">CSS</label>
+        <input id="chkcss" type="checkbox" name="css" value="css">
+
+        <label for="chkjs">JS</label>
+        <input id="chkjs" type="checkbox" name="js" value="js">
+      </fieldset>
+
+      <fieldset>
+        <legend>Curriculo</legend>
+          <input type="file" name="curriculo">
+      </fieldset>
+
+      <fieldset>
+        <legend>Mensagem</legend>
+          <textarea name="msg" cols="30" rows="10" style="resize: none;"></textarea>
+      </fieldset>
+      <input type="submit" value="Submit" class="submit"/>
+      <input type="button" value="Button" class="button"/>
+      <input type="reset" value="Reset" class="rest"/>
     </form>
   </body>
 </html>
