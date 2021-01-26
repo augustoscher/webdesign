@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title>Gradient</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Augusto">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <style>
+      html, body{
+        /*
+          Funciona como uma imagem de fundo. 
+          Parametros obrigatórios: cor inicial e cor final 
+           Também é possível passar a direção
+        */
+        background-image: linear-gradient(to left top , rgba(0, 0, 0, .4), blue);
+        height: 100%;
+      }
+
+      #shadow{
+        font-family: sans-serif;
+        text-align: center;
+        text-shadow: 1px 2px 10px red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="shadow">Gradient</h1>
+  </body>
+</html>
