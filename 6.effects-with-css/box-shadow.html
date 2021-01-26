@@ -1,0 +1,62 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title> Box Shaddow </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Augusto">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <style>
+      #shadow{
+        background: orange;
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        border-radius: 100px;
+
+        /* 1param: deslocalmento no eixo x: (como se copiasse a imagem e distanciasse 10px para a direita)  */
+        /* 2param: deslocamento no eixo y */
+        /* 3param: esfumaçamento*/
+        /* 4param(opciona): tamanho da sombra */
+        /* 5param: cor */
+        box-shadow: 10px 20px 0 black;
+      }
+
+      #shadow2{
+        background: green;
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        border-radius: 100px;
+
+        box-shadow: -10px -20px 0 black;
+      }
+
+      #shadow3{
+        background: blue;
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+        border-radius: 100px;
+
+        /* tamanho da sombra definido antes da cor */
+        /* duas sombras no mesmo elemento */
+        box-shadow: 20px 20px 10px 20px #999,
+        -10px -10px 0 red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Box Shaddow</h1>
+
+    <div id="shadow"></div>
+
+    <div id="shadow2"></div>
+
+    <div id="shadow3"></div>
+
+  </body>
+</html>
