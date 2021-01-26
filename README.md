@@ -1,5 +1,11 @@
 # webdesign
 
+## Refs
+
+Repo de fontes legais: https://www.fontsquirrel.com
+
+Css Tricks: https://css-tricks.com/
+
 ## display
 
 ### block
