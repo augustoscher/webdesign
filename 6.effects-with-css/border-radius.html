@@ -8,9 +8,36 @@
     <meta name="description" content="descrição bacanuda">
     <meta name="keywords" content="html5, tecnologia">
 
+    <style>
+      #radius{
+        background: orange;
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+
+        /* 100px de raio das efera nos cantos */
+        /* Se a minha width e height tiverem 200px e eu atribuir 100px
+           de border-radius, teremos uma esfera perfeita.
+           Da no mesmo que colocar 100% */
+
+        border-radius: 100px;
+      }
+
+      #radius2{
+        background: green;
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+
+        border-radius: 50px 5px;
+      }
+    </style>
   </head>
   <body>
     <h1>Border-Radius</h1>
+
+    <div id="radius"></div>
+    <div id="radius2"></div>
 
   </body>
 </html>
