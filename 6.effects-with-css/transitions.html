@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title> Transitions </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Augusto">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <style>
+      div{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+
+        /* transition tem por objetivo deixar as coisas acontecerem de maneira mais suave */
+        /* transition-property: all; */
+        transition-property: width, height;
+        transition-duration: 1s, 2s;
+        /* transition-timing-function: ease-in-out */
+        transition-timing-function: cubic-bezier(.77,-0.39,.5,1.36);
+        transition-delay: 0s, 0.4s;
+      }
+
+      div:hover{
+        width: 400px;
+        height: 400px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1 id="shadow">Transitions</h1>
+    <div>
+      oi
+    </div>
+  </body>
+</html>

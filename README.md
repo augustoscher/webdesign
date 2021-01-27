@@ -6,6 +6,8 @@ Repo de fontes legais: https://www.fontsquirrel.com
 
 Css Tricks: https://css-tricks.com/
 
+Cubic Bezier: https://cubic-bezier.com/#.17,.67,.83,.67
+
 ## display
 
 ### block
