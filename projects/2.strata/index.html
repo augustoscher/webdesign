@@ -112,9 +112,196 @@
       </section>
 
       <section class="main-content-section">
-        <h3></h3>
-      </section>
+        <h3>Elements</h3>
 
+        <h4>Text</h4>
+        <p>Do sunt consequat <strong>strong</strong> irure labore in elit qui <b>bold</b>
+          culpa in incididunt velit aute. <i>Italic</i> consequat <em>emphasized</em>
+          <sup>superscript</sup>excepteur officia fugiat cillum aliquip proident irure 
+          enim ex Lorem. Elit cillum sit nisi <sub>sub</sub>labore anim. Aute anim 
+          proident nisi enim<code>for (;;) {...}</code> duis velit commodo sit <a href="#">link</a>
+           nostrud ex reprehenderit.
+        </p>
+
+        <blockquote cite="http://developer.mozilla.org">
+          <p>Esta é uma citação tirada da
+          Mozilla Developer Center.</p>
+        </blockquote>
+
+        <p>Accordin to Mozilla website, <q cite="http://developer.mozilla.org">Firefox was released in 2004 and became a big success.</q></p>
+
+        <h4>Preformated</h4>
+        <pre>
+          <code>
+package main
+
+import "fmt"
+
+sum := 0
+
+for i := 0; i < 10; i++ {
+  sum += i
+}
+
+fmt.Println(sum)
+          </code>
+        </pre>
+
+        <h4>Lists</h4>
+        <h5>Not Ordered</h5>
+        <ul>
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+        </ul>
+
+        <h5>Ordered</h5>
+        <ol>
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+        </ol>
+
+        <h5>Alternate</h5>
+        <ul class="ul-alternate">
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+        </ul>
+
+        <h4>Actions</h4>
+        <p>
+          <a href="#" title="Default" class="button-default">Default</a>
+          <a href="#" title="Default" class="button-default button-default-stroke">Default</a>
+        </p>
+
+        <p>
+          <a href="#" title="Small" class="button-default button-default-small">Small</a>
+          <a href="#" title="Small" class="button-default button-default-small-stroke">Small</a>
+        </p>
+
+        <p>
+          <a href="#" title="Full" class="button-default button-default-full">Full</a>
+          <a href="#" title="Full" class="button-default button-default-full-stroke">Full</a>
+        </p>
+
+        <h4>Table</h4>
+        <h5>Defaut</h5>
+
+        <table class="table">
+          <thead>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Price</th>
+          </thead>
+          <tfoot>
+            <td colspan="2">Total</td>
+            <td>290.99</td>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>Item One</td>
+              <td>Nostrud eiusmod</td>
+              <td>29.99</td>
+            </tr>
+            <tr>
+              <td>Item Two</td>
+              <td>Consequat exercitation</td>
+              <td>50.99</td>
+            </tr>
+            <tr>
+              <td>Item Three</td>
+              <td>Fugiat aute com</td>
+              <td>90.99</td>
+            </tr>
+            <tr>
+              <td>Item Four</td>
+              <td>Adipisicing id deserunt </td>
+              <td>100.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h5>Alternate</h5>
+
+        <table class="table-alternate">
+          <thead>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Price</th>
+          </thead>
+          <tfoot>
+            <td colspan="2">Total</td>
+            <td>290.99</td>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>Item One</td>
+              <td>Nostrud eiusmod</td>
+              <td>29.99</td>
+            </tr>
+            <tr>
+              <td>Item Two</td>
+              <td>Consequat exercitation</td>
+              <td>50.99</td>
+            </tr>
+            <tr>
+              <td>Item Three</td>
+              <td>Fugiat aute com</td>
+              <td>90.99</td>
+            </tr>
+            <tr>
+              <td>Item Four</td>
+              <td>Adipisicing id deserunt </td>
+              <td>100.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>Buttons</h4>
+        <p>
+          <button title="Default" class="button-default">Default</button>
+          <button title="Default" class="button-default button-default-stroke">Default</button>
+        </p>
+
+        <p>
+          <button title="Small" class="button-default button-default-small">Small</button>
+          <button title="Small" class="button-default button-default-small-stroke">Small</button>
+        </p>
+
+        <p>
+          <button title="Full" class="button-default button-default-full">Full</button>
+          <button title="Full" class="button-default button-default-full-stroke">Full</button>
+        </p>
+
+        <h5>Forms</h5>
+        <form>
+          <label for="txtname">Name</label>
+          <input type="text" id="txtname" name="name">
+
+          <label for="txtname">Email</label>
+          <input type="email" id="txtemail" name="email">
+
+          <label for="selcategory">Category</label>
+          <select id="selcategory">
+            <option value="1">Sel 1</option>
+            <option value="2">Sel 2</option>
+          </select>
+
+          <label><input type="radio" value="low" name="priority"> Low priority</label>
+          <label><input type="radio" value="medium" name="priority"> Medium priority</label>
+          <label><input type="radio" value="high" name="priority"> High priority</label>
+
+          <label><input type="checkbox" name="copy">Send email with copy</label>
+          <label><input type="checkbox" name="human">Not a Robot</label>
+
+          <label for="msg">Mensagem:</label>
+          <textarea id="msg" placeholder="Digite uma mensagem"></textarea>
+
+          <input type="submit" value="Send" class="button-default">
+          <input type="reset" value="Cancel" class="button-default-stroke">
+        </form>
+      </section>
     </main>
 
     <footer class="main-footer"></footer>
