@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6{
     Ex: Se a fonte tem 32px de size,
      o margin bottom seria de 72px
   */
-  margin: 0 0 1em 0;
+  margin: 1em 0 1em 0;
 }
 
 h1{
@@ -72,6 +72,34 @@ code {
 
 pre code {
   display: block;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  padding-left: 1em;
+}
+
+.ul-alternate{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.ul-alternate li{
+  border-bottom: 1px solid #d8d8d8;
+  padding-left: 0;
+}
+
+/* Pseudo Classe
+   last child pega o ultimo filho do elemento
+*/
+.ul-alternate li:last-child {
+  border: 0;
+}
+
+li {
+  padding-left: .5em;
 }
 
 /* deixar o header fixado */
