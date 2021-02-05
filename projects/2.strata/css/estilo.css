@@ -19,6 +19,10 @@ p {
   margin: 0 0 2em;
 }
 
+img {
+  max-width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6{
   color: #787878;
   font-weight: normal;
@@ -126,6 +130,16 @@ li {
   padding-left: .5em;
 }
 
+.main-header-link img{
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.recent-works-card img{
+  border-radius: 6px;
+  overflow: hidden;
+}
+
 .row{
   overflow: auto;
 }
@@ -183,6 +197,10 @@ li {
 .button-default-full{
   display: block;
   text-align: center;
+}
+
+.imagem-link{
+  border: 0;
 }
 
 .table {
