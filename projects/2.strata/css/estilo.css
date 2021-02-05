@@ -81,13 +81,13 @@ ul, ol {
   padding-left: 1.1em;
 }
 
-input, label, textarea {
+input, label, textarea, select {
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
 }
 
-input, textarea {
+input, textarea, select {
   background: #f7f7f7;
   padding: 15px;
   border-radius: 5px;
@@ -95,7 +95,12 @@ input, textarea {
   margin-bottom: 15px;
 }
 
-input:focus, textarea:focus {
+/* Pega todos os inputs do tipo text */
+input[type="radio"], input[type="checkbox"]{
+  width: auto;
+}
+
+input:focus, textarea:focus, select:focus {
   border-color: #49bf9d;
   outline: none;
 }
