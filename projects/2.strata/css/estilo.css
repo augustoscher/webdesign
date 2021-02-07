@@ -208,6 +208,13 @@ li {
   font-size: .8em;
   display: inline-block;
   width: auto;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.button-default:hover{
+  background-color:#5ddeb9;
+  border-color: transparent;
 }
 
 .button-default-stroke{
@@ -218,6 +225,7 @@ li {
 
 .button-default-stroke:hover{
   border-color: #49bf9d;
+  background-color: white;
 }
 
 .button-default-small{
