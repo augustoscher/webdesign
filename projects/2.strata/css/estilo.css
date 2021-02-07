@@ -183,8 +183,18 @@ li {
   margin-left: 2%;
 }
 
+/* seleciona o elemento col-1-3 que vem
+ imediatamente após o elemento col-2-3 */
+.col-2-3 + .col-1-3{
+ margin-left: 2%;
+}
+
+.col-1-3 + .col-2-3{
+  margin-left: 2%;
+ }
+
 .col-2-3 {
-  width: 65%;
+  width: 66%;
   float: left;
 }
 
