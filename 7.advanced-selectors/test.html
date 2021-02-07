@@ -9,6 +9,25 @@
     <meta name="keywords" content="html5, tecnologia">
 
     <style>
+      /* descendencia: seleciona toda tag a descendente de article */
+      article a {
+        background-color: red;
+      }
+
+      /* seleciona todos os <a> que são filhos diretos de p */
+      article p > a {
+        border: solid 5px green;
+      }
+
+      /* filho direto: não aplica em ngm pois todos os elementos
+      <b> são filhos diretos de a */
+      article p > b {
+        background-color: blue;
+      }
+
+      article a > b {
+        background-color: blue;
+      }
     </style>
   </head>
   <body>
