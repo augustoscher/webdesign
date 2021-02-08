@@ -9,14 +9,14 @@
     <meta name="keywords" content="html5, tecnologia">
 
     <style>
-      /* descendencia: seleciona toda tag a descendente de article */
+      /* 1. DESCENDENCIA: seleciona toda tag a descendente de article */
       article a {
         background-color: red;
       }
 
-      /* seleciona todos os <a> que são filhos diretos de p */
+      /*2. FILHO DIRETO (>): seleciona todos os <a> que são filhos diretos de p */
       article p > a {
-        border: solid 5px green;
+        border: solid 3px green;
       }
 
       /* filho direto: não aplica em ngm pois todos os elementos
@@ -28,10 +28,25 @@
       article a > b {
         background-color: blue;
       }
+
+      /*3. IRMÂO ADJASCENTE (+): Seleciona o elemento p que vem imediatamente após o h3 */
+      article h3 + p {
+        background-color: aqua;
+      }
+
+      article p + p {
+        border: 2px solid black;
+      }
+
+      /*4. PRÒXIMOS IRMÂOS (~): Seleciona todos os elemento p que vem depois de h3 */
+      article h3 ~ p {
+        font-size: 22px;
+      }
+
     </style>
   </head>
   <body>
-    <h1 id="shadow">Advanced Selectors test</h1>
+    <h1 id="shadow">Advanced Selectors</h1>
     <article>
       <h3>Test</h3>
       <p>
