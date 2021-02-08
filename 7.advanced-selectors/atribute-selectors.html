@@ -13,22 +13,73 @@
         display: block;
       }
 
+      .destaque{
+        background: #ccc;
+      }
+
       /* Selecionar por atributo ([])*/
       /* Seleciona todos os elementos a que possuem o atributo title */
       a[title]{
         color:red;
       }
-      
+
+      img[alt="test"]{
+        border: 3px solid red;
+      }
+
+      /* Seleciona atributos que iniciam com determinado valor (^) */
+      a[href^="http"]{
+        text-decoration: none;
+      }
+
+      /* Seleciona atributos que terminam com determinado valor ($)*/
+      img[src$=".png"]{
+        border: 3px solid green;
+      }
+
+      /* Negação :not() */
+
+      /* Seleciona todos os elementos da página que não são links, ou elementos <a>  */
+      :not(a){
+
+      }
+
+      /* seleciona todos os parágrafos que não possuem a classe destaque */
+      p:not(.destaque){
+        font-weight: bold;
+      }
+
+      /* seleciona todas as imagens que não tem o atributo alt */
+      img:not([alt]){
+        color: blueviolet;
+      }
+
     </style>
   </head>
   <body>
     <h1 id="shadow">Advanced Selectors - Atributo</h1>
     <article>
       <h3>Test</h3>
+     
       <a>Sem atributo title</a>
       <a title="">Com atributo title</a>
       <a>Sem atributo title</a>
       <a title="">Com atributo title</a>
+
+      <img alt="test">
+      <img alt="">
+
+      <a href="http://augustoscher.com">augustoscher.com</a>
+      <a href="augustoscher.com">augustoscher.com</a>
+
+      <img src="...jpg">
+      <img src="...png">
+
+      <p class="destaque">destaque</p>
+      <p>sem destaque</p>
+      <p class="destaque">destaque</p>
+      <p>sem destaque</p>
     </article>
+
   </body>
 </html>
