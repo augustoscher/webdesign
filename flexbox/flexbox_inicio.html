@@ -76,6 +76,45 @@
             .flexbox:nth-child(8) div {
                 width: 70px;
             }
+
+            .flexbox:nth-child(9) {
+                justify-content: center;
+                align-items: center;
+            }
+
+            .flexbox:nth-child(9) div {
+                background: red;
+                height: 50px;
+                /* aplicado em flex-items */
+                flex-basis: 100px;
+            }
+
+            .flexbox:nth-child(10) {
+                justify-content: center;
+                align-items: center;
+            }
+
+            .flexbox:nth-child(10) div {
+                background: red;
+                height: 50px;
+                flex-basis: 100px;
+            }
+
+            /* aplica flex-grow: 1 no 2 e 4 elementos: .
+            Pega o espaço sobrando e divide pelo numero de flex-grow e distribui 
+            Isso só acontece se tiver espaço sobrando para distribuir
+            */
+            .flexbox:nth-child(10) div:nth-child(2) {
+                flex-grow: 1;
+            }
+
+            .flexbox:nth-child(10) div:nth-child(4) {
+                flex-grow: 1;
+            }
+
+
+            /* flex: grow shrink basis */
+            /* flex: 100px 1 0 */
         </style>
     </head>
     <body>
@@ -107,6 +146,20 @@
         <div class="flexbox">
             <div class="div1">1</div>
             <div class="div2" style="font-size: 4em;">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
             <div class="div3">3</div>
             <div class="div4">4</div>
         </div>
