@@ -51,8 +51,8 @@
             .flexbox:nth-child(5) {
                 /* centraliza itens na horizontal e vertical 
                 
-                align-items: alinha na vertical
-                justify-content: alinha na horizontal
+                align-items: alinha na vertical (cross axis, eixo y)
+                justify-content: alinha na horizontal (main axis, eixo x)
                 */
                 align-items: center;
                 justify-content: center;
@@ -156,6 +156,24 @@
                 align-items: flex-start;
                 align-self: stretch;
             }
+
+            .flexbox:nth-child(14) {
+                justify-content: center;
+                /* align-items: flex-end;  */
+                height: 500px;
+                /* flex-direction inverte os eixos (main axis(x) e cross axis(y) ) 
+                align-items: flex-end; muda o comportamento: em vez de colocar verticalmente no bottom da div, coloca no final do lado direito
+                flex-basis: 60px; antes era a altura, agora passa a ser a largura 
+                
+                */
+                flex-direction: column;
+            }
+
+            .flexbox:nth-child(14) div {
+                /* flex-basis é como se fosse o width do elemento */
+                flex-basis: 60px;
+            }
+
         </style>
     </head>
     <body>
@@ -187,6 +205,13 @@
         <div class="flexbox">
             <div class="div1">1</div>
             <div class="div2" style="font-size: 4em;">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
             <div class="div3">3</div>
             <div class="div4">4</div>
         </div>
