@@ -63,7 +63,8 @@
             }
 
             .flexbox:nth-child(7) {
-                /* alinha através de uma linha imaginaria em baixo das fontes */
+                /* alinha através de uma linha imaginaria em baixo 
+                das fontes */
                 align-items: baseline;
                 justify-content: center;
             }
@@ -111,10 +112,50 @@
             .flexbox:nth-child(10) div:nth-child(4) {
                 flex-grow: 1;
             }
+            
+            .flexbox:nth-child(11) div {
+                background: blue;
+                flex-basis: 100px;
+                height: 50px;
+                margin: 5px;
+            }
+            
+            .flexbox:nth-child(11) div:nth-child(2) {
+                flex-shrink: 1;
+            }
+            
+            .flexbox:nth-child(11) div:nth-child(4) {
+                /* flex: grow shrink basis */
+                flex: 1 0 100px;
+            }
 
+            .flexbox:nth-child(12) div:nth-child(2) {
+                /* muda elementos de posição sem mexer no html */
+                order: -1
+            }
 
-            /* flex: grow shrink basis */
-            /* flex: 100px 1 0 */
+            .flexbox:nth-child(13) div {
+                background: green;
+            }
+
+            .flexbox:nth-child(13) {
+                align-items: flex-start;
+            }
+
+            .flexbox:nth-child(13) div:nth-child(2) {
+                align-items: flex-start;
+                align-self: flex-end;
+            }
+
+            .flexbox:nth-child(13) div:nth-child(3) {
+                align-items: flex-start;
+                align-self: center;
+            }
+
+            .flexbox:nth-child(13) div:nth-child(1) {
+                align-items: flex-start;
+                align-self: stretch;
+            }
         </style>
     </head>
     <body>
@@ -146,6 +187,27 @@
         <div class="flexbox">
             <div class="div1">1</div>
             <div class="div2" style="font-size: 4em;">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
             <div class="div3">3</div>
             <div class="div4">4</div>
         </div>
