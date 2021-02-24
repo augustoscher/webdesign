@@ -25,6 +25,7 @@
             p{
                 color: red;
             }
+            /* pseudo-classe empty e before */
             p:empty:before{
                 content: "paragrafo vazio nao dá, ne!";
             }
@@ -40,7 +41,8 @@
             a:focus, a:hover, div:focus{
                 background: red;
             }
-            
+
+            /*  */
             input::placeholder{
                 color: red
             }
@@ -66,12 +68,14 @@
         
         
         <ul>
+            <!-- a tem estilo de hover e focus -->
             <li><a href="#">link falso</a></li>
             <li><a href="#">link falso</a></li>
             <li><a href="#">link falso</a></li>
             <li><a href="#">link falso</a></li>
         </ul>
         
+        <!-- tabindex serve para as divs ganharem foco -->
         <div tabindex="1">div 1</div>
         <div tabindex="2">div 2</div>
         <div tabindex="3">div 3</div>
