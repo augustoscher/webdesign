@@ -14,8 +14,9 @@ a, button {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
-  font-weight: 700;
 }
+
+/* --------------------------------------------------- */
 
 .header{
   position: fixed;
@@ -25,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 40px;
   font-style: italic;
   background: #FEF4F4;
+  z-index: 100;
 }
 
 .header h4 {
@@ -32,6 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   color: #171728;
   height: 35px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -72,27 +75,55 @@ h1, h2, h3, h4, h5, h6 {
   color: #F38068;
   cursor: pointer;
 }
-
+/* --------------------------------------------------- */
 #principal {
   width: 80%;
-  margin: 80px auto;
+  margin: 100px auto;
 }
 
-.hero-img{
-  width: 100%;
+.heading-1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 16px 0 0;
+  text-transform: uppercase;
+  display: inline;
+  padding-right: 10px;
 }
 
-.portifolio {
-  padding: 25px 80px;
-  text-align: center;
+.heading-1.background {
+  position: relative;
+  z-index: 1;
 }
 
-.portifolio p {
-  line-height: 2;
-  font-size: 14px;
-  color: #555;
+.heading-1.background::before{
+  border-top: 12px solid #F38068;
+  content:"";
+  margin: 0 0 0 -10px;
+  position: absolute;
+  top: 65%; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
+.hero {
+  padding: 35px 0;
+  height: 500px;
+  background-image: url(../images/hero2.svg);
+  background-size: cover;
+  background-position: left top;
+  background-blend-mode: overlay;
+  background-repeat: repeat;
+}
+
+.hero p {
+  line-height: 1.5;
+  font-size: 18px;
+  color: #171728;
+  text-align: left;
+}
+/* --------------------------------------------------- */
 .gallery {
   padding: 25px 80px;
   overflow: auto;
