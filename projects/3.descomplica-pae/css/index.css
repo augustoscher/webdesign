@@ -123,6 +123,24 @@ h1, h2, h3, h4, h5, h6 {
   color: #171728;
   text-align: left;
 }
+
+.button{
+  border: transparent;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 12px 32px;
+  cursor: pointer;
+  background-color: #F38068;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color .4s ease;
+  outline: none;
+}
+
+.button:hover{
+  background-color: #F8A696;
+}
 /* --------------------------------------------------- */
 .gallery {
   padding: 25px 80px;
