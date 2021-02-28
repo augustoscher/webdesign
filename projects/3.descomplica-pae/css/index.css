@@ -107,6 +107,33 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 
+.heading-2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 16px 0 0;
+  text-transform: uppercase;
+  display: inline;
+  padding-right: 10px;
+}
+
+.heading-2.background {
+  position: relative;
+  z-index: 1;
+}
+
+.heading-2.background::before{
+  /* border-top: 12px solid #F7C777; */
+  border-top: 12px solid #B2D5D9;
+  content:"";
+  margin: 0 0 0 -10px;
+  position: absolute;
+  top: 65%; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 .hero {
   padding: 35px 0;
   height: 500px;
