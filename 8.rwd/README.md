@@ -25,4 +25,3 @@ Algumas propriedades são:
 - aspect-ratio
 - device-aspect-ratio
 - resolution
-
