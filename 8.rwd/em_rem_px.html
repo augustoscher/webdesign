@@ -11,8 +11,17 @@
         <!-- largura da tela (viewport) vai ser igual ao device-width  -->
         <meta name="viewport" content="width=device-width">
 
+
+        <!-- 
+          Unidade em: Sempre relativa ao elemento pai
+          Unidade rem: Sempre relativa ao elemento root (tag html)
+          Se tivermos font-size: 32px na tag html e definirmos 1rem em qualquer filho
+          ele terá 32px de font-size.
+         -->
+
         <style>
           body {
+            /* font: 100% é equivalente a 16px */
             font: 100% sans-serif;
           }
 
@@ -24,7 +33,10 @@
             padding: 1em;
             /* 320px / 16 = valor na unidade em relativo ao font-size do body*/
             width: 20em;
-            margin: auto;
+            /* margin: 100px auto; */
+            /* 100px (resultado esperado) / 16 = 6.25em */
+            margin: 6.25em auto;
+
           }
 
           h1 {
@@ -45,7 +57,7 @@
             /* Nesse caso, como a é filho de p, já temos um font-size definido com 1.25em (20px)
                Então a conta muda:
                Resultado final que espero: 24px
-               
+
                24 / 20 = 1.2em
             */
             font-size: 1.2em;
