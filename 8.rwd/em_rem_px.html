@@ -1,0 +1,65 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Augusto Scher">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <!-- largura da tela (viewport) vai ser igual ao device-width  -->
+        <meta name="viewport" content="width=device-width">
+
+        <style>
+          body {
+            font: 100% sans-serif;
+          }
+
+          div {
+            border: 1px solid black;
+            /* com a unidade em, fica proporcional ao font size 
+               1em significa 1x o tamanho da fonte
+            */
+            padding: 1em;
+            /* 320px / 16 = valor na unidade em relativo ao font-size do body*/
+            width: 20em;
+            margin: auto;
+          }
+
+          h1 {
+            text-align: center;
+          }
+
+          p {
+            margin: 0;
+            line-height: 1.5;
+            /* 16px x 1.25 = 20px */
+            font-size: 1.25em;
+            /* ou seja */
+            /* font-size: 1.25em é igual a font-size: 20px */
+          }
+
+          a {
+            /* font-size: 24px; */
+            /* Nesse caso, como a é filho de p, já temos um font-size definido com 1.25em (20px)
+               Então a conta muda:
+               Resultado final que espero: 24px
+               
+               24 / 20 = 1.2em
+            */
+            font-size: 1.2em;
+          }
+        </style>
+
+    </head>
+    <body>
+        <h1>Unidades de medida</h1>
+        <div>
+          <p>Incididunt aliqua non elit 
+            incididunt enim eu reprehenderit laborum sint pariatur ut quis 
+            proident. Non et dolor amet <a href="#">link</a> exercitation laborum nostrud consequat ad. Ex elit labore eiusmod consequat sunt officia elit id excepteur occaecat est do. Aute commodo incididunt pariatur proident est laborum do tempor.
+          </p>
+        </div>
+    </body>
+</html>
