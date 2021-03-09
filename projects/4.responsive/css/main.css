@@ -14,6 +14,12 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Poppins', sans-serif;
 }
 
+.clearfix:after{
+    content: " ";
+    display: block;
+    clear:both;
+}
+
 .top-header{
     text-align: center;
 }
@@ -63,10 +69,6 @@ h1, h2, h3, h4, h5, h6{
 .button:hover{
     background-color: #F8A696;
   }
-
-/* .right{
-    float: right
-} */
 
 .heading-1 {
     font-weight: 700;
@@ -119,7 +121,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .top-content {
-    margin-bottom: 16px;
+    margin: 2em 0;
     padding: 1em;
 }
 
@@ -202,4 +204,29 @@ h1, h2, h3, h4, h5, h6{
     overflow: hidden;
     opacity: 0;
     display: block;
+}
+
+/* 780px(tamanho da quebra que desejo) / 16 (font-size) = 48.75em */
+@media screen and (min-width: 48.75em) {
+    .top-content {
+        /* background: #B2D5D9; */
+    }
+
+    .top-header-logo{
+        float: left;
+    }
+
+    .top-nav{
+        float: right;
+        margin-top: 25px;
+    }
+
+    .top-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .top-nav li{
+        display: inline-block;
+    }
 }
