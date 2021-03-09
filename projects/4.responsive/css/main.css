@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* Boa prática definir o encoding */
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #FEF4F4;
+    color: #171728;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-header{
+    text-align: center;
+}
+
+.top-header-logo{
+    margin: .5em;
+}
+
+.top-nav{
+    background: #FEF4F4;
+    text-align: center;
+}
+
+.top-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-nav a{
+    color: #171728;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.top-nav a:hover{
+    color: #F38068;
+}
+
+.heading-1 {
+    font-weight: 700;
+    margin: 16px 0 0;
+    text-transform: uppercase;
+    display: inline;
+    padding-right: 10px;
+}
+
+.heading-1.background {
+    position: relative;
+    z-index: 1;
+}
+
+.heading-1.background::before{
+    border-top: 12px solid #F38068;
+    content:"";
+    margin: 0 0 0 -10px;
+    position: absolute;
+    top: 65%; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
