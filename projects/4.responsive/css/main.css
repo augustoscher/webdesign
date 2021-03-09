@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Poppins', sans-serif;
 }
 
-.clearfix:after{
+.clearfix:after, .row:after{
     content: " ";
     display: block;
     clear:both;
@@ -228,5 +228,16 @@ h1, h2, h3, h4, h5, h6{
 
     .top-nav li{
         display: inline-block;
+    }
+
+    .middle-content-article{
+        padding: 0;
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+    .main-content-article a {
+        float: right;
     }
 }
