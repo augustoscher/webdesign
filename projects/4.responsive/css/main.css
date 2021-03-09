@@ -45,9 +45,28 @@ h1, h2, h3, h4, h5, h6{
     color: #F38068;
 }
 
+.button{
+    display: inline-block;
+    padding: .75em 2em;
+    background: #F38068;
+    border: transparent;
+    /* font-size: 1em; */
+    /* font-weight: 600; */
+    /* padding: 12px 32px; */
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    transition: background .4s ease;
+    outline: none;
+}
+
+.button:hover{
+    background-color: #F8A696;
+  }
+
 .heading-1 {
     font-weight: 700;
-    margin: 16px 0 0;
+    margin: 16px;
     text-transform: uppercase;
     display: inline;
     padding-right: 10px;
@@ -68,4 +87,44 @@ h1, h2, h3, h4, h5, h6{
     right: 0;
     bottom: 0;
     z-index: -1;
+}
+
+.heading-3 {
+    font-weight: 700;
+    margin: 16px;
+    text-transform: uppercase;
+    display: inline;
+    padding-right: 10px;
+}
+
+.heading-3.background {
+    position: relative;
+    z-index: 1;
+}
+
+.heading-3.background::before{
+    border-top: 12px solid #B2D5D9;
+    content:"";
+    margin: -2px 0 0 -10px;
+    position: absolute;
+    top: 65%; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.top-content {
+    margin-bottom: 16px;
+    padding: 1em;
+}
+
+.top-content-subtitle{
+    font-size: 1em;
+    line-height: 2em;
+    margin: 2em;
+}
+
+.article {
+    padding: 1em;
 }
