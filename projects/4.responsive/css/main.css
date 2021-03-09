@@ -168,3 +168,38 @@ h1, h2, h3, h4, h5, h6{
     font-size: 1.2em;
     letter-spacing: .2em;
 }
+
+.footer{
+    /* background: #25303e; */
+    padding: 2em;
+    background: #F7C777;
+    text-align: center;
+}
+
+.footer ul{
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menushare li{
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.footer-menushare a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #171728;
+}
+
+.footer p {
+    font-size: .8em;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
