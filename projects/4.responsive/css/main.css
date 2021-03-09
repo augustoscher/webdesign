@@ -64,6 +64,10 @@ h1, h2, h3, h4, h5, h6{
     background-color: #F8A696;
   }
 
+/* .right{
+    float: right
+} */
+
 .heading-1 {
     font-weight: 700;
     margin: 16px;
@@ -125,6 +129,34 @@ h1, h2, h3, h4, h5, h6{
     margin: 2em;
 }
 
-.article {
-    padding: 1em;
+.middle-content-article {
+    padding: 2em;
+    text-align: center;
+}
+
+.middle-content-article p {
+    line-height: 1.5em;
+    font-size: .9em;
+}
+
+.middle-content-article span[class^=icon] {
+    font-size: 2.5em;
+}
+
+.middle-content-title{
+    font-size: 1.2em;
+}
+
+.main-content-article{
+    padding: 2em;
+    text-align: center;
+}
+
+.main-content-article p {
+    line-height: 1.5em;
+    font-size: .9em;
+}
+
+.main-content-title{
+    font-size: 1.2em;
 }
