@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6{
     /* background: url(../images/books1.jpg); */
     background-blend-mode: overlay;
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
 }
 
 .top-content-body-description{
