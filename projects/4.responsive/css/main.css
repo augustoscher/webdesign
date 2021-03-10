@@ -138,11 +138,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .middle-content {
-    padding: 2em;
+    padding: 0 2em 2em 2em;
 }
 
 .middle-content-article {
-    padding: 2em;
+    padding: 1em;
     text-align: center;
 }
 
@@ -160,11 +160,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .main-content {
-    padding: 2em;
+    padding: 0 2em 2em 2em;
 }
 
 .main-content-article{
-    padding: 2em 2em .5em 2em;
+    /* padding: 2em 2em .5em 2em; */
+    padding: 1em;
 }
 
 .main-content-article p {
