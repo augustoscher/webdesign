@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6{
 .heading-1.background::before{
     border-top: 12px solid #F38068;
     content:"";
-    margin: 0 0 0 -10px;
+    margin: 15px 0 0 -15px;
     position: absolute;
     top: 65%; 
     left: 0;
