@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .top-content {
-    padding: 2em 5em;
+    padding: 2em;
 }
 
 .top-content-description {
@@ -127,6 +127,7 @@ h1, h2, h3, h4, h5, h6{
 
 .top-content-image img {
     height: 20em;
+    width: 20em;
 }
 
 .top-content-subtitle{
@@ -251,6 +252,7 @@ h1, h2, h3, h4, h5, h6{
 /* 1000px / 16 =  62.5em*/
 @media screen and (min-width: 62.5em) {
     .top-content{
+        padding: 2em 5em;
         /* margin-top: 1em; */
         /* margin: 3.5em 0; */
         /* min-height: 31.25em; */
@@ -262,12 +264,11 @@ h1, h2, h3, h4, h5, h6{
     }
 
     .hero-content{
-        padding: 1em 3em;
+        padding: 1em 2em;
     }
 
     .top-content-description {
         float: left;
-        /* margin-top: 1em; */
         padding: 0;
         width: 44%;
     }
@@ -276,11 +277,10 @@ h1, h2, h3, h4, h5, h6{
         float: right;
         padding: 0;
         width: 44%;
-        /* margin: 3%; */
     }
-    /* .top-content-image { */
-        /* visibility: visible; */
-        /* height: 0;
-        width: 0; */
-    /* }     */
+
+    .top-content-image img {
+        width: 25em;
+        height: 20em;
+    }
 }
