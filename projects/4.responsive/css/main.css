@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6{
 .heading-1.background::before{
     border-top: 12px solid #F38068;
     content:"";
-    margin: 15px 0 0 -15px;
+    margin: 15px 0 0 -20px;
     position: absolute;
     top: 65%; 
     left: 0;
@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6{
 
 .top-content {
     padding: 3em;
-    background: url(../images/library.jpg), rgba(0, 0, 0, 0.2);
+    background: url(../images/library.jpg), rgba(0, 0, 0, 0.6);
     /* background: url(../images/books1.jpg); */
     background-blend-mode: overlay;
     background-size: cover;
