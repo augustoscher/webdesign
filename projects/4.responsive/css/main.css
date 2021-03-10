@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6{
 
 .top-content {
     padding: 3em;
-    background: url(../images/books1.jpg), rgba(0, 0, 0, 0.2);
+    background: url(../images/library.jpg), rgba(0, 0, 0, 0.2);
     /* background: url(../images/books1.jpg); */
     background-blend-mode: overlay;
     background-size: cover;
@@ -172,7 +172,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .main-content-article{
-    /* padding: 2em 2em .5em 2em; */
     padding: 1em;
 }
 
@@ -271,30 +270,24 @@ h1, h2, h3, h4, h5, h6{
         /* background-position: right bottom; */
         
     }
+
     .top-content-body {
         max-width: 1200px;
         margin: 0px auto;
     }
 
-
-    .hero-content{
-        padding: 1em 2em;
+    .middle-content-article{
+        width: 23%;
+        margin: 1%;
     }
 
-    .top-content-description {
+    .main-content-article{
+        width: 44%;
+        margin: 1%;
         float: left;
-        padding: 0;
-        width: 44%;
     }
 
-    .top-content-image{
-        float: right;
-        padding: 0;
-        width: 44%;
-    }
-
-    .top-content-image img {
-        width: 25em;
-        height: 20em;
+    .main-content-article a {
+        float: none;
     }
 }
