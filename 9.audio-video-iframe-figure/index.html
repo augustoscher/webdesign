@@ -15,5 +15,23 @@
   <body>
     <h1>Incorporando Audio, Video, Ifram e Figure</h1>
 
+    <h2>Audio</h2>
+    <audio controls loop>
+      <!-- permite que o browser escolha qual a extensão -->
+      <source src="./media/mozart_trompa.mp3" type="audio/mp3" >
+      <source src="./media/mozart_trompa.ogg" type="audio/ogg" >
+      <p>Browser não suporte esse recurso</p>
+    </audio>
+
+    <h2>Video</h2>
+    <!-- quando tiver muted, o autoplay funciona -->
+    <video controls autoplay loop muted>
+      <!-- permite que o browser escolha qual a extensão -->
+      <source src="./media/video.mp4" type="video/mp4" >
+      <source src="./media/video.ogv" type="audio/ogg" >
+      <source src="./media/video.webm" type="audio/webm" >
+      <!-- fallback -->
+      <p>Browser não suporte esse recurso</p>
+    </video>
   </body>
 </html>
