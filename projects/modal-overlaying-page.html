@@ -1,0 +1,59 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title> Testing </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Augusto">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <style>
+        body{
+            padding: 30px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        body{
+            position: relative;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 10;
+            background-color: rgba(0,0,0,0.55);
+        }
+
+        .modal {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 3px;
+            box-shadow: 0 1px 18px 0 rgba(119, 109, 109, 0.12);
+            position: fixed;
+            right: 0;
+            left: 0;
+            bottom: 0; 
+            left: 0;
+            top: auto;
+            padding: 16px;
+            max-width: 540px;
+            margin: 0 auto 16px;
+            background-color: #fff;
+            text-align: center;
+            z-index: 11; /* 1px higher than the overlay layer */
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Overlaying background</h1>
+    <div class="overlay"></div>
+    <aside class="modal">
+        <p>Cookie Consent</p>
+        <button>Ok</button>
+    </aside>
+    <div class="content"></div>
+  </body>
+</html>
