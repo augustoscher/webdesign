@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title> Testing </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Augusto">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <style>
+        body{
+            padding: 30px;
+            font-family: 'Open Sans', sans-serif;
+            background: '#fff';
+        }
+        body{
+          position: relative;
+        }
+        .modal {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          border-radius: 3px;
+          border: 1px solid '#d9d9d9';
+          box-shadow: 0 1px 18px 0 rgb(0 0 0 / 12%);
+          padding: 16px;
+          max-width: 540px;
+          margin: 0 auto 16px;
+          background-color: #fff;
+          text-align: center;
+          z-index: 11; /* 1px higher than the overlay layer */
+
+          position: fixed;
+          left:0;
+          right: 0;
+          bottom:-100px;
+
+          animation-name: slideup;
+          animation-delay: 1.5s;
+          animation-duration: 0.2s;
+          animation-fill-mode: forwards;
+          animation-timing-function: cubic-bezier(.17,.37,.07,1.62);
+        }
+
+        @keyframes slideup {
+          0%{bottom:-50px}
+          100%{bottom:0;}
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Overlaying background</h1>
+    <aside class="modal">
+      <p>Cookie Consent</p>
+      <button>Ok</button>
+    </aside>
+    <div class="content"></div>
+  </body>
+</html>
