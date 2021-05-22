@@ -13,6 +13,7 @@
             #grupo-cores{
                 padding: 15px;
                 background: url(imagens/tile.png);
+                /* counter */
                 counter-reset: cnt;
             }
 
@@ -22,10 +23,12 @@
                 border: 10px solid rgba(0,0,0,.5);
                 margin: 20px auto;
                 padding: 15px;
+                /* increment de counter */
                 counter-increment: cnt;
             }
 
             #grupo-cores div::before{
+                /* add counter inside divs with before selector */
                 content: '['counter(cnt)']'
             }
         </style>
