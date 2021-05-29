@@ -31,6 +31,63 @@
                 /* add counter inside divs with before selector */
                 content: '['counter(cnt)']'
             }
+
+            #grupo-cores div:nth-child(2){
+                background-color: blueviolet;
+                background-clip: content-box;
+            }
+
+            #grupo-cores div:nth-child(3){
+                background-color: blueviolet;
+                background-clip: padding-box;
+            }
+
+            #grupo-cores div:nth-child(4){
+                background-color: rgb(50%, 50%, 0%);
+                background-clip: content-box;
+            }
+
+            #grupo-cores div:nth-child(4){
+                background-color: rgba(50%, 50%, 0%, .5);
+                background-clip: content-box;
+            }
+
+            #grupo-cores div:nth-child(5){
+                /* graus, saturacao, luminosidade */
+                /* hsl é mais facil conseguir variaçoes do mesmo tom */
+                background-color: hsl(0deg, 50%, 50%);
+                background-clip: content-box;
+            }
+
+            #grupo-cores div:nth-child(6){
+                /* graus, saturacao, luminosidade */
+                /* hsl é mais facil conseguir variaçoes do mesmo tom */
+                background-color: hsla(120deg, 100%, 20%);
+                background-clip: content-box;
+            }
+
+            /* gradiente linear */
+            #grupo-cores div:nth-child(7){
+                background-image: linear-gradient(blue, red);
+                background-clip: content-box;
+            }
+
+            /* gradiente linear */
+            #grupo-cores div:nth-child(8){
+                background-image: linear-gradient(to bottom left, blue, red);
+                background-clip: content-box;
+            }
+
+            /* gradiente radial */
+            #grupo-cores div:nth-child(9){
+                background-image: radial-gradient(blue, red);
+            }
+
+             /* gradiente radial */
+             #grupo-cores div:nth-child(10){
+                background-image: radial-gradient(circle, blue, red);
+            }
+
         </style>
     </head>
     <body>
