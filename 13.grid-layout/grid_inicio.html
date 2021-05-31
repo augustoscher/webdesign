@@ -10,7 +10,7 @@
         
         <style>
             .gridContainer{
-                width: 300px;
+                width: 400px;
                 background: #ccc;
             }
 
@@ -28,9 +28,13 @@
                 background: #eee;
             }
 
+            /* Grid layout */
             .gridContainer {
                 display: grid;
-                grid-template-columns: repeat(3, 90px);
+                /* fr veio com css grid
+                    divide os espaços em partes iguais
+                 */
+                grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: 100px 100px;
                 grid-gap: 30px 12px;
             }
