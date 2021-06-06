@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title> pagina de exemplo estrutura basica </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Augusto">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <style>
+      .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* 100px header, 50px nav, 1fr main, 50px footer*/
+        grid-template-rows: 100px 50px 1fr 50px;
+        grid-gap: 20px;
+        width: 90%;
+        background: #ccc;
+        margin: 30px auto;
+      }
+
+      .gridItem {
+        background-color: orange;
+        padding: 15px;
+        font-family: sans-serif;
+      }
+
+      .header {
+        grid-column: 1 / -1;
+      }
+
+      .nav {
+        grid-column: 1 / 3;
+      }
+
+      .aside {
+        grid-row: 2 / -1;
+        grid-column: 3 / 4;
+      }
+
+      .main {
+        grid-column: 1 / 3;
+        min-height: 200px;
+      }
+
+      .footer {
+        grid-column: 1 / -1;
+        /* overlaying aside */
+        grid-row: 4 / 5;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Grid Layout</h2>
+
+    <div class="gridContainer">
+      <header class="header gridItem">header</header>
+      <nav class="nav gridItem">nav</nav>
+      <aside class="aside gridItem">aside</aside>
+      <main class="main gridItem">main</main>
+      <footer class="footer gridItem">footer</footer>
+    </div>
+  </body>
+
+</html>
