@@ -8,6 +8,8 @@ Css Tricks: https://css-tricks.com/
 
 Cubic Bezier: https://cubic-bezier.com/#.17,.67,.83,.67
 
+Auto prefixer: https://autoprefixer.github.io/
+
 ## display
 
 ### block
