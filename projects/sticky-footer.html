@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+  <head>
+    <title>Sticky Footer - Flexbox</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Augusto">
+    <meta name="description" content="descrição bacanuda">
+    <meta name="keywords" content="html5, tecnologia">
+
+    <style>
+      body{
+        height: 100%;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .border {
+        border: 1px dotted black;
+      }
+
+      .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        height: 48px;
+      }
+
+      .main {
+        flex: 1 1 auto;
+        height: 100%;
+      }
+
+      .footer {
+        height: 41px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="border header">
+        My header
+      </header>
+      <main class="border main">
+        main
+      </main>
+      <footer class="border footer">
+        My footer
+      </footer>
+    </div>
+  </body>
+</html>
