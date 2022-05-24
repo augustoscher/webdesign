@@ -1,5 +1,20 @@
 # webdesign
 
+## Running
+
+Node 18:
+
+```sh
+nvm use 18
+```
+
+Run:
+```sh
+yarn dev
+```
+
+Now, project will be available on http://localhost:3003/projects/4.responsive/
+
 ## Refs
 
 Repo de fontes legais: https://www.fontsquirrel.com
