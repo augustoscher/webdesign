@@ -1,0 +1,18 @@
+{
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "parser": "babel-eslint",
+  "plugins": [
+    "prettier"
+  ],
+  "globals": {
+    "If": true,
+    "For": true
+  },
+  "rules": {
+    "no-undef": 0, // Replace this with jsx-jcs-no-undef
+    "prettier/prettier": "error"
+  },
+  "env": {
+    "jest": true
+  }
+}
